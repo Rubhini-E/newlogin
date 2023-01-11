@@ -1,0 +1,84 @@
+﻿<Window x:Class="reg_resource.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:reg_resource"
+        xmlns:lang="clr-namespace:reg_resource.properties.language"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="900" Background="Thistle">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\rubhi\Downloads\l2.webp"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <!--<Label Content="{x:Static lang:Resource1.title1}" Grid.Row="2" Grid.Column="0" FontSize="18" FontWeight="ExtraBold" Grid.ColumnSpan="2" Margin="40,8,141,54" Grid.RowSpan="2"></Label>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Margin="84,0,0,0" >
+            <RadioButton Content="{x:Static lang:Resource1.eng}" x:Name="rbeng" IsChecked="True" FontSize="16" FontWeight="Medium" Height="30" Width="90" Tag="en-US" ></RadioButton>
+            <RadioButton Content="{x:Static lang:Resource1.tam}" x:Name="rbtam"  FontSize="16" FontWeight="Medium" Height="30" Width="90" Tag="ta-IN"></RadioButton>
+            <RadioButton Content="{x:Static lang:Resource1.tel}" x:Name="rbtel"  FontSize="16" FontWeight="Medium" Height="30" Width="90" Tag="te-IN"></RadioButton>
+            <RadioButton Content="{x:Static lang:Resource1.hin}" x:Name="rbhin"  FontSize="16" FontWeight="Medium" Height="30" Width="90" Tag="hi-IN"></RadioButton>
+            <RadioButton Content="{x:Static lang:Resource1.jap}" x:Name="rbjap" FontSize="16" FontWeight="Medium" Height="30" Width="106" Tag="ja-JP"></RadioButton>
+        </StackPanel>-->
+
+        <Label Content="{x:Static lang:Resource1.title}" Grid.Row="1" FontSize="35" FontWeight="UltraBold" Foreground="Wheat"  HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Grid.ColumnSpan="3" Margin="184,10,71,33" Grid.RowSpan="2"/>
+
+        <Label Content="{x:Static lang:Resource1.Name}" Grid.Row="3" Grid.Column="1" FontSize="20" FontWeight="Bold" Foreground="Azure"  HorizontalContentAlignment="Right" VerticalContentAlignment="Center"></Label>
+        <TextBox x:Name="txtname"  Grid.Row="3" Grid.Column="2" Margin="0,5,0,10"  FontSize="20"/>
+        <Label x:Name="lblname" Grid.Row="3" Grid.Column="3" FontSize="8" FontStyle="Italic" Foreground="Azure"  ></Label>
+
+
+        <Label Content="{x:Static lang:Resource1.age}" Grid.Row="4" Grid.Column="1" FontSize="20" FontWeight="Bold" Foreground="Azure"  HorizontalContentAlignment="Right" VerticalContentAlignment="Center"></Label>
+        <TextBox x:Name="txtage"  Grid.Row="4" Grid.Column="2" Margin="0,5,0,10"  FontSize="20"/>
+        <Label x:Name="lblage" Grid.Row="4" Grid.Column="3"  FontSize="8" FontStyle="Italic" Foreground="Azure"  ></Label>
+
+        <Label Content="{x:Static lang:Resource1.email}" Grid.Row="5" Grid.Column="1" FontSize="20" FontWeight="Bold" Foreground="Azure"  HorizontalContentAlignment="Right" VerticalContentAlignment="Center"></Label>
+        <TextBox x:Name="txtemail"  Grid.Row="5" Grid.Column="2" Margin="0,5,0,10"  FontSize="20"/>
+        <Label x:Name="lblemail" Grid.Row="5" Grid.Column="3"  FontSize="8" FontStyle="Italic" Foreground="Azure"  ></Label>
+        <!--<StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal">
+            <RadioButton x:Name="rb1" Content="{x:Static lang:Resource1.male}" Height="20" Width="90" FontSize="15" FontWeight="Medium"/>
+            <RadioButton x:Name="rb2" Content="{x:Static lang:Resource1.female}" Height="20" Width="110" FontSize="15" FontWeight="Medium"/>
+        </StackPanel>-->
+
+        <Label Content="{x:Static lang:Resource1.password}" Grid.Row="6" Grid.Column="1" FontSize="20" Foreground="Azure"  FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"></Label>
+        <PasswordBox x:Name="pswd"  Grid.Row="6" Grid.Column="2" Margin="0,5,0,10"  FontSize="20"/>
+        <Label x:Name="lblpswd" Grid.Row="6" Grid.Column="3"  FontSize="8" FontStyle="Italic" Foreground="Azure"  ></Label>
+
+
+        <Label Content="{x:Static lang:Resource1.cpassword}" Grid.Row="7" Grid.Column="1" Foreground="Azure"  FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"></Label>
+        <PasswordBox x:Name="cpswd"  Grid.Row="7" Grid.Column="2" Margin="0,5,0,10"  FontSize="20"/>
+        <Label x:Name="lblcpswd" Grid.Row="7" Grid.Column="3"  FontSize="8" FontStyle="Italic" Foreground="Azure"  ></Label>
+
+        <!--<CheckBox Content="{x:Static lang:Resource1.ctext}" x:Name="crem" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3" IsChecked="True"  FontSize="23" FontWeight="Light" Foreground="Blue" VerticalContentAlignment="Center" Margin="144,0,0,0"></CheckBox>-->
+
+        <Button Content="{x:Static lang:Resource1.register}" Click="Button_Click" Background="CadetBlue" Grid.Row="9" Grid.Column="2" Margin="0,33,11,23" Grid.RowSpan="2" FontSize="25" FontWeight="ExtraBold"/>
+        <Button Content="{x:Static lang:Resource1.back}" Click="Button_Click_1" Background="CadetBlue" Grid.Row="9" Grid.Column="0" Margin="184,33,52,23" Grid.RowSpan="2" FontSize="25" FontWeight="ExtraBold" Grid.ColumnSpan="2"/>
+
+
+
+    </Grid>
+
+
+
+
+</Window>
